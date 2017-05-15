@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/murchanskii/CLionProjects/unixInd/main.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/main.c.o"
-  "/home/murchanskii/CLionProjects/unixInd/my_commands/my_cd.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_cd.c.o"
-  "/home/murchanskii/CLionProjects/unixInd/my_commands/my_exit.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_exit.c.o"
-  "/home/murchanskii/CLionProjects/unixInd/my_commands/my_ls.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_ls.c.o"
-  "/home/murchanskii/CLionProjects/unixInd/my_commands/my_ps.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_ps.c.o"
-  "/home/murchanskii/CLionProjects/unixInd/my_commands/my_pwd.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o"
-  "/home/murchanskii/CLionProjects/unixInd/my_commands/my_rm.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_rm.c.o"
-  "/home/murchanskii/CLionProjects/unixInd/my_commands/my_rmdir.c" "/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/main.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/main.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_cd.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_exit.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_ls.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_ps.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_rm.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_rm.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

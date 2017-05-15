@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/murchanskii/CLionProjects/unixInd/cmake-build-debug"/>
+				<Option working_dir="/home/murchanskii/Documents/my_unix_ind/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/murchanskii/CLionProjects/unixInd/cmake-build-debug"/>
+				<Option working_dir="/home/murchanskii/Documents/my_unix_ind/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/murchanskii/CLionProjects/unixInd/cmake-build-debug"/>
+				<Option working_dir="/home/murchanskii/Documents/my_unix_ind/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="unixInd">
-				<Option output="/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/unixInd" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/murchanskii/CLionProjects/unixInd/cmake-build-debug"/>
+				<Option output="/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/unixInd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/murchanskii/Documents/my_unix_ind/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 unixInd"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 unixInd"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="unixInd/fast">
-				<Option output="/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/unixInd" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/murchanskii/CLionProjects/unixInd/cmake-build-debug"/>
+				<Option output="/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/unixInd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/murchanskii/Documents/my_unix_ind/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,41 +77,41 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 unixInd/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 unixInd/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/main.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/main.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_cd.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_exit.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_functions.h">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_ls.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_ps.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_pwd.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_rm.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_rm.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/my_commands/my_rmdir.c">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c">
 			<Option target="unixInd"/>
 		</Unit>
-		<Unit filename="/home/murchanskii/CLionProjects/unixInd/CMakeLists.txt">
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

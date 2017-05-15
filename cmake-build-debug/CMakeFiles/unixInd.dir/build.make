@@ -43,10 +43,10 @@ RM = /home/murchanskii/Downloads/clion-2017.1.1/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/murchanskii/CLionProjects/unixInd
+CMAKE_SOURCE_DIR = /home/murchanskii/Documents/my_unix_ind
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/murchanskii/CLionProjects/unixInd/cmake-build-debug
+CMAKE_BINARY_DIR = /home/murchanskii/Documents/my_unix_ind/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/unixInd.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/unixInd.dir/flags.make
 
 CMakeFiles/unixInd.dir/main.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/unixInd.dir/main.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/main.c.o   -c /home/murchanskii/CLionProjects/unixInd/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/unixInd.dir/main.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/main.c.o   -c /home/murchanskii/Documents/my_unix_ind/main.c
 
 CMakeFiles/unixInd.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/main.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/main.c > CMakeFiles/unixInd.dir/main.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/main.c > CMakeFiles/unixInd.dir/main.c.i
 
 CMakeFiles/unixInd.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/main.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/main.c -o CMakeFiles/unixInd.dir/main.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/main.c -o CMakeFiles/unixInd.dir/main.c.s
 
 CMakeFiles/unixInd.dir/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/unixInd.dir/main.c.o.provides.build: CMakeFiles/unixInd.dir/main.c.o
 
 CMakeFiles/unixInd.dir/my_commands/my_exit.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/my_commands/my_exit.c.o: ../my_commands/my_exit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/unixInd.dir/my_commands/my_exit.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_exit.c.o   -c /home/murchanskii/CLionProjects/unixInd/my_commands/my_exit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/unixInd.dir/my_commands/my_exit.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_exit.c.o   -c /home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c
 
 CMakeFiles/unixInd.dir/my_commands/my_exit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/my_commands/my_exit.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/my_commands/my_exit.c > CMakeFiles/unixInd.dir/my_commands/my_exit.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c > CMakeFiles/unixInd.dir/my_commands/my_exit.c.i
 
 CMakeFiles/unixInd.dir/my_commands/my_exit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/my_commands/my_exit.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/my_commands/my_exit.c -o CMakeFiles/unixInd.dir/my_commands/my_exit.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c -o CMakeFiles/unixInd.dir/my_commands/my_exit.c.s
 
 CMakeFiles/unixInd.dir/my_commands/my_exit.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/unixInd.dir/my_commands/my_exit.c.o.provides.build: CMakeFiles/unixIn
 
 CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o: ../my_commands/my_pwd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o   -c /home/murchanskii/CLionProjects/unixInd/my_commands/my_pwd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o   -c /home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c
 
 CMakeFiles/unixInd.dir/my_commands/my_pwd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/my_commands/my_pwd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/my_commands/my_pwd.c > CMakeFiles/unixInd.dir/my_commands/my_pwd.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c > CMakeFiles/unixInd.dir/my_commands/my_pwd.c.i
 
 CMakeFiles/unixInd.dir/my_commands/my_pwd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/my_commands/my_pwd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/my_commands/my_pwd.c -o CMakeFiles/unixInd.dir/my_commands/my_pwd.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c -o CMakeFiles/unixInd.dir/my_commands/my_pwd.c.s
 
 CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o.provides.build: CMakeFiles/unixInd
 
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o: ../my_commands/my_ls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/unixInd.dir/my_commands/my_ls.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_ls.c.o   -c /home/murchanskii/CLionProjects/unixInd/my_commands/my_ls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/unixInd.dir/my_commands/my_ls.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_ls.c.o   -c /home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c
 
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/my_commands/my_ls.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/my_commands/my_ls.c > CMakeFiles/unixInd.dir/my_commands/my_ls.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c > CMakeFiles/unixInd.dir/my_commands/my_ls.c.i
 
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/my_commands/my_ls.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/my_commands/my_ls.c -o CMakeFiles/unixInd.dir/my_commands/my_ls.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c -o CMakeFiles/unixInd.dir/my_commands/my_ls.c.s
 
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/unixInd.dir/my_commands/my_ls.c.o.provides.build: CMakeFiles/unixInd.
 
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.o: ../my_commands/my_cd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/unixInd.dir/my_commands/my_cd.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_cd.c.o   -c /home/murchanskii/CLionProjects/unixInd/my_commands/my_cd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/unixInd.dir/my_commands/my_cd.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_cd.c.o   -c /home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c
 
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/my_commands/my_cd.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/my_commands/my_cd.c > CMakeFiles/unixInd.dir/my_commands/my_cd.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c > CMakeFiles/unixInd.dir/my_commands/my_cd.c.i
 
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/my_commands/my_cd.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/my_commands/my_cd.c -o CMakeFiles/unixInd.dir/my_commands/my_cd.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c -o CMakeFiles/unixInd.dir/my_commands/my_cd.c.s
 
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/unixInd.dir/my_commands/my_cd.c.o.provides.build: CMakeFiles/unixInd.
 
 CMakeFiles/unixInd.dir/my_commands/my_ps.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/my_commands/my_ps.c.o: ../my_commands/my_ps.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/unixInd.dir/my_commands/my_ps.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_ps.c.o   -c /home/murchanskii/CLionProjects/unixInd/my_commands/my_ps.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/unixInd.dir/my_commands/my_ps.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_ps.c.o   -c /home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c
 
 CMakeFiles/unixInd.dir/my_commands/my_ps.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/my_commands/my_ps.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/my_commands/my_ps.c > CMakeFiles/unixInd.dir/my_commands/my_ps.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c > CMakeFiles/unixInd.dir/my_commands/my_ps.c.i
 
 CMakeFiles/unixInd.dir/my_commands/my_ps.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/my_commands/my_ps.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/my_commands/my_ps.c -o CMakeFiles/unixInd.dir/my_commands/my_ps.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c -o CMakeFiles/unixInd.dir/my_commands/my_ps.c.s
 
 CMakeFiles/unixInd.dir/my_commands/my_ps.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/unixInd.dir/my_commands/my_ps.c.o.provides.build: CMakeFiles/unixInd.
 
 CMakeFiles/unixInd.dir/my_commands/my_rm.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/my_commands/my_rm.c.o: ../my_commands/my_rm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/unixInd.dir/my_commands/my_rm.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_rm.c.o   -c /home/murchanskii/CLionProjects/unixInd/my_commands/my_rm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/unixInd.dir/my_commands/my_rm.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_rm.c.o   -c /home/murchanskii/Documents/my_unix_ind/my_commands/my_rm.c
 
 CMakeFiles/unixInd.dir/my_commands/my_rm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/my_commands/my_rm.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/my_commands/my_rm.c > CMakeFiles/unixInd.dir/my_commands/my_rm.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/my_commands/my_rm.c > CMakeFiles/unixInd.dir/my_commands/my_rm.c.i
 
 CMakeFiles/unixInd.dir/my_commands/my_rm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/my_commands/my_rm.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/my_commands/my_rm.c -o CMakeFiles/unixInd.dir/my_commands/my_rm.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/my_commands/my_rm.c -o CMakeFiles/unixInd.dir/my_commands/my_rm.c.s
 
 CMakeFiles/unixInd.dir/my_commands/my_rm.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/unixInd.dir/my_commands/my_rm.c.o.provides.build: CMakeFiles/unixInd.
 
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o: CMakeFiles/unixInd.dir/flags.make
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o: ../my_commands/my_rmdir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o   -c /home/murchanskii/CLionProjects/unixInd/my_commands/my_rmdir.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o   -c /home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c
 
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/CLionProjects/unixInd/my_commands/my_rmdir.c > CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c > CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.i
 
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/CLionProjects/unixInd/my_commands/my_rmdir.c -o CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c -o CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.s
 
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o.requires:
 
@@ -273,7 +273,7 @@ unixInd: CMakeFiles/unixInd.dir/my_commands/my_rm.c.o
 unixInd: CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o
 unixInd: CMakeFiles/unixInd.dir/build.make
 unixInd: CMakeFiles/unixInd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable unixInd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable unixInd"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unixInd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -297,6 +297,6 @@ CMakeFiles/unixInd.dir/clean:
 .PHONY : CMakeFiles/unixInd.dir/clean
 
 CMakeFiles/unixInd.dir/depend:
-	cd /home/murchanskii/CLionProjects/unixInd/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/murchanskii/CLionProjects/unixInd /home/murchanskii/CLionProjects/unixInd /home/murchanskii/CLionProjects/unixInd/cmake-build-debug /home/murchanskii/CLionProjects/unixInd/cmake-build-debug /home/murchanskii/CLionProjects/unixInd/cmake-build-debug/CMakeFiles/unixInd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/murchanskii/Documents/my_unix_ind/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/murchanskii/Documents/my_unix_ind /home/murchanskii/Documents/my_unix_ind /home/murchanskii/Documents/my_unix_ind/cmake-build-debug /home/murchanskii/Documents/my_unix_ind/cmake-build-debug /home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/unixInd.dir/depend
 
