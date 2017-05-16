@@ -94,19 +94,30 @@ SHCMD(rm)
     char *path;
 
     if (pth[1] == NULL) {
-        path = malloc(strlen(getenv("PWD")) * sizeof(char));
+        path = malloc(strlen(getenv("PWD")) * sizeof(char) + strlen(filename) * sizeof(char) + 2);
         strcpy(path, getenv("PWD"));
     }
     else {
         char *pch = strrchr(pth, '/');
         pth[pch - pth] = 0;
-        path = malloc(strlen(pth) * sizeof(char));
-        strcpy(path, pth);
+        if (pth[0] != '/') {
+            path = malloc(strlen(getenv("PWD")) * sizeof(char) + strlen(pth) * sizeof(char) +
+                                  strlen(filename) * sizeof(char) + 3);
+            strcpy(path, getenv("PWD"));
+            strcat(path, "/");
+            strcat(path, pth);
+        }
+        else {
+            path = malloc(strlen(pth) * sizeof(char) + strlen(filename) * sizeof(char) + 2);
+            strcpy(path, pth);
+        }
+
     }
 
     // start file check for existence
     if (!file_exists(filename, path)) {
         printf("my_rm: cannot remove \'%s\': No such file or directory\n", filename);
+        free(path);
         return 0;
     }
     // end file check for existence
@@ -116,6 +127,7 @@ SHCMD(rm)
     strcat(path, filename);
     if (!flag_d && !is_regular_file(path)) {
         printf("my_rm: cannot remove '%s': Is a directory\n", filename);
+        free(path);
         return 0;
     }
     // end check if file is a DIRECTORY
@@ -141,8 +153,10 @@ SHCMD(rm)
         char answer[50];
         scanf("%49s", answer);
         answer[strlen(answer)] = 0;
-        if (strcmp(answer, "y") || strcmp(answer, "Y"))
+        if (strcmp(answer, "y") || strcmp(answer, "Y")) {
+            free(path);
             return 0;
+        }
     }
 
     ret = remove(path);
