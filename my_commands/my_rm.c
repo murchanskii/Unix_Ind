@@ -2,6 +2,8 @@
 // Created by murchanskii on 11.05.17.
 //
 
+// CAN'T HANDLE FILENAMES WITH SPACES
+
 // done: -i -d
 
 #include <stdio.h>
