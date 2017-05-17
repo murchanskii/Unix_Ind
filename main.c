@@ -56,6 +56,9 @@ void my_exec(char *cmd)
         if ( IS_CMD(rmdir) )
             SHCMD_EXEC(rmdir);
     else
+        if ( IS_CMD(mkdir) )
+            SHCMD_EXEC(mkdir);
+    else
     { // иначе вызов внешней команды
         execvp(params[0], params);
         perror("exec"); // если возникла ошибка при запуске

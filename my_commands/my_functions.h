@@ -17,6 +17,7 @@ int starts_with (char *str, char *start);
 int is_regular_file(const char *path);
 int file_exists(char *filename, char *path);
 void to_one_string(int n_start, char *filename, char **params);
+void remove_certain_chars(char *str, char c);
 
 SHCMD(pwd);
 SHCMD(exit);
@@ -25,5 +26,6 @@ SHCMD(cd);
 SHCMD(ps);
 SHCMD(rm);
 SHCMD(rmdir);
+SHCMD(mkdir);
 
 #endif //UNIXIND_MY_FUNCTIONS_H

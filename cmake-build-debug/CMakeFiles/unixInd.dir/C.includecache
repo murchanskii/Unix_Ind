@@ -63,6 +63,16 @@ my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_mkdir.c
+my_functions.h
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+stdio.h
+-
+sys/stat.h
+-
+memory.h
+-
+stdlib.h
+-
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c
 stdio.h
@@ -111,14 +121,14 @@ my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c
-memory.h
--
+my_functions.h
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 stdio.h
+-
+memory.h
 -
 stdlib.h
 -
 getopt.h
 -
-my_functions.h
-/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 

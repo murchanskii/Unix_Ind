@@ -13,6 +13,7 @@ CMakeFiles/unixInd.dir/my_commands/my_exit.c.o: ../my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o: ../my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o: ../my_commands/my_ls.c
 
+CMakeFiles/unixInd.dir/my_commands/my_mkdir.c.o: ../my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_mkdir.c.o: ../my_commands/my_mkdir.c
 
 CMakeFiles/unixInd.dir/my_commands/my_ps.c.o: ../my_commands/my_functions.h
