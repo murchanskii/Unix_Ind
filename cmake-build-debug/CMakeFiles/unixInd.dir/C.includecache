@@ -62,6 +62,8 @@ time.h
 my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_mkdir.c
+
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c
 stdio.h
 -

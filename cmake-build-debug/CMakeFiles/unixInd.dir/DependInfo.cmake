@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_cd.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_exit.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_ls.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_mkdir.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_mkdir.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_ps.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_ps.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_rm.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_rm.c.o"

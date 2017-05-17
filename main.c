@@ -11,10 +11,10 @@
 // ls
 // cd
 // rm
+// rmdir
 
 // NOT DONE
 // mkdir
-// rmdir
 // free
 // tail
 // ps

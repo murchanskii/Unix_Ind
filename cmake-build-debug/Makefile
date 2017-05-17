@@ -231,6 +231,33 @@ my_commands/my_ls.c.s:
 	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_ls.c.s
 .PHONY : my_commands/my_ls.c.s
 
+my_commands/my_mkdir.o: my_commands/my_mkdir.c.o
+
+.PHONY : my_commands/my_mkdir.o
+
+# target to build an object file
+my_commands/my_mkdir.c.o:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_mkdir.c.o
+.PHONY : my_commands/my_mkdir.c.o
+
+my_commands/my_mkdir.i: my_commands/my_mkdir.c.i
+
+.PHONY : my_commands/my_mkdir.i
+
+# target to preprocess a source file
+my_commands/my_mkdir.c.i:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_mkdir.c.i
+.PHONY : my_commands/my_mkdir.c.i
+
+my_commands/my_mkdir.s: my_commands/my_mkdir.c.s
+
+.PHONY : my_commands/my_mkdir.s
+
+# target to generate assembly for a file
+my_commands/my_mkdir.c.s:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_mkdir.c.s
+.PHONY : my_commands/my_mkdir.c.s
+
 my_commands/my_ps.o: my_commands/my_ps.c.o
 
 .PHONY : my_commands/my_ps.o
@@ -360,6 +387,9 @@ help:
 	@echo "... my_commands/my_ls.o"
 	@echo "... my_commands/my_ls.i"
 	@echo "... my_commands/my_ls.s"
+	@echo "... my_commands/my_mkdir.o"
+	@echo "... my_commands/my_mkdir.i"
+	@echo "... my_commands/my_mkdir.s"
 	@echo "... my_commands/my_ps.o"
 	@echo "... my_commands/my_ps.i"
 	@echo "... my_commands/my_ps.s"
