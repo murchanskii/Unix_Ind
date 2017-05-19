@@ -7,6 +7,16 @@
 #include <sys/stat.h>
 #include <memory.h>
 #include <stdlib.h>
+#include <unistd.h>
+
+void create_parents(char *full_path, int flag_v)
+{
+    char *cur_path = full_path;
+    char *path = malloc(strlen(cur_path) - strlen(getenv("PWD")) + 1);
+    strcpy(path, cur_path + strlen(getenv("PWD")) + 1);
+    printf("path: %s\n",path);
+    free(path);
+}
 
 void remove_certain_chars(char *str, char c)
 {
@@ -77,17 +87,21 @@ SHCMD(mkdir)
         strcpy(path, full_path);
         path[pch - full_path] = 0;
 
-        if (file_exists(filename, path))
+        create_parents(full_path, 1);
+
+        if (!access(full_path, F_OK))
         {
-            printf("my_mkdir: cannot create directory '%s': File exists\n", filename);
+            printf("my_mkdir: cannot create directory '%s': File exists\n", cur_param);
             free(full_path);
             free(path);
             return 0;
         }
-        int ret = mkdir(full_path, 0700);
+
+
+        /*int ret = mkdir(full_path, 0700);
         if (ret) {
-            printf("my_mkdir: cannot create directory '%s': No such file or directory\n", path);
-        }
+            printf("my_mkdir: cannot create directory '%s': No such file or directory\n", cur_param);
+        }*/
         free(full_path);
         free(path);
     }
