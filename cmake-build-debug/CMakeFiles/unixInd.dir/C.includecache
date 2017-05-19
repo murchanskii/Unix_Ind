@@ -22,6 +22,16 @@ values.h
 my_commands/my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 
+/home/murchanskii/Documents/my_unix_ind/my_commands/additional_funcs.c
+my_functions.h
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+memory.h
+-
+stdlib.h
+-
+getopt.h
+-
+
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c
 stdio.h
 -
@@ -130,8 +140,6 @@ stdio.h
 memory.h
 -
 stdlib.h
--
-getopt.h
 -
 unistd.h
 -

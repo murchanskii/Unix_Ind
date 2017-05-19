@@ -13,12 +13,15 @@ int shell_active;
 int np; // number of parameters
 char *params[256]; //параметры команды разделенные пробелами
 
-int starts_with (char *str, char *start);
-int is_regular_file(const char *path);
-void to_one_string(int n_start, char *filename, char **params);
-void remove_certain_chars(char *str, char c);
 
-void initialisation(char *full_path, char *path, char *filename);
+void to_one_string(int n_start, char *filename, char **params);
+
+void initialisation(char *full_path, char *cur_param, int *i);
+void getopt_for_dirs(int *flag_p, int *flag_v);
+int is_regular_file(const char *path);
+int starts_with (char *str, char *start);
+void remove_certain_chars(char *str, char c);
+int calc_n_start();
 
 SHCMD(pwd);
 SHCMD(exit);

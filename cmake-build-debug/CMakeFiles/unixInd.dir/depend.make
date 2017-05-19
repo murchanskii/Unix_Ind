@@ -4,6 +4,9 @@
 CMakeFiles/unixInd.dir/main.c.o: ../main.c
 CMakeFiles/unixInd.dir/main.c.o: ../my_commands/my_functions.h
 
+CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.o: ../my_commands/additional_funcs.c
+CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.o: ../my_commands/my_functions.h
+
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.o: ../my_commands/my_cd.c
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.o: ../my_commands/my_functions.h
 

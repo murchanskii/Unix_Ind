@@ -4,6 +4,9 @@
 CMakeFiles/unixInd.dir/main.c.o
  /home/murchanskii/Documents/my_unix_ind/main.c
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.o
+ /home/murchanskii/Documents/my_unix_ind/my_commands/additional_funcs.c
+ /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_cd.c.o
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
