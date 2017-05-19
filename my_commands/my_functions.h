@@ -13,9 +13,6 @@ int shell_active;
 int np; // number of parameters
 char *params[256]; //параметры команды разделенные пробелами
 
-
-void to_one_string(int n_start, char *filename, char **params);
-
 void initialisation(char *full_path, char *cur_param, int *i);
 void getopt_for_dirs(int *flag_p, int *flag_v);
 int is_regular_file(const char *path);

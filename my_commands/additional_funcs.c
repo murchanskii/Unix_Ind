@@ -6,6 +6,7 @@
 #include <memory.h>
 #include <stdlib.h>
 #include <getopt.h>
+#include <sys/stat.h>
 
 void initialisation(char *full_path, char *cur_param, int *i)
 {
@@ -80,4 +81,11 @@ int calc_n_start()
         if (params[i][0] == '-')
             n_start++;
     return n_start;
+}
+
+int is_regular_file(const char *path)
+{
+    struct stat path_stat;
+    stat(path, &path_stat);
+    return S_ISREG(path_stat.st_mode);
 }
