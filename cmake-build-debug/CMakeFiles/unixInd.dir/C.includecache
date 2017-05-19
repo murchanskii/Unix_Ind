@@ -31,6 +31,8 @@ stdlib.h
 -
 getopt.h
 -
+sys/stat.h
+-
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c
 stdio.h
@@ -123,11 +125,9 @@ memory.h
 -
 getopt.h
 -
-dirent.h
--
 stdlib.h
 -
-sys/stat.h
+unistd.h
 -
 my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
