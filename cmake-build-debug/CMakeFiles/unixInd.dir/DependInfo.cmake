@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/murchanskii/Documents/my_unix_ind/main.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/main.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/additional_funcs.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_cd.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_exit.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_ls.c.o"

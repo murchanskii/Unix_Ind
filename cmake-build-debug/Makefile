@@ -150,6 +150,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/main.c.s
 .PHONY : main.c.s
 
+my_commands/additional_funcs.o: my_commands/additional_funcs.c.o
+
+.PHONY : my_commands/additional_funcs.o
+
+# target to build an object file
+my_commands/additional_funcs.c.o:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.o
+.PHONY : my_commands/additional_funcs.c.o
+
+my_commands/additional_funcs.i: my_commands/additional_funcs.c.i
+
+.PHONY : my_commands/additional_funcs.i
+
+# target to preprocess a source file
+my_commands/additional_funcs.c.i:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.i
+.PHONY : my_commands/additional_funcs.c.i
+
+my_commands/additional_funcs.s: my_commands/additional_funcs.c.s
+
+.PHONY : my_commands/additional_funcs.s
+
+# target to generate assembly for a file
+my_commands/additional_funcs.c.s:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.s
+.PHONY : my_commands/additional_funcs.c.s
+
 my_commands/my_cd.o: my_commands/my_cd.c.o
 
 .PHONY : my_commands/my_cd.o
@@ -378,6 +405,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... my_commands/additional_funcs.o"
+	@echo "... my_commands/additional_funcs.i"
+	@echo "... my_commands/additional_funcs.s"
 	@echo "... my_commands/my_cd.o"
 	@echo "... my_commands/my_cd.i"
 	@echo "... my_commands/my_cd.s"

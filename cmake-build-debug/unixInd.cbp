@@ -87,6 +87,9 @@
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/main.c">
 			<Option target="unixInd"/>
 		</Unit>
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/additional_funcs.c">
+			<Option target="unixInd"/>
+		</Unit>
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c">
 			<Option target="unixInd"/>
 		</Unit>
