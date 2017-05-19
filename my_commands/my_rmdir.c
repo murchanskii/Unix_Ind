@@ -2,32 +2,66 @@
 // Created by murchanskii on 17.05.17.
 //
 
-// done: -p -v (almost, "not existing dir", ect)
+// done: -p -v
 
 #include "my_functions.h"
 #include <stdio.h>
 #include <memory.h>
 #include <stdlib.h>
 #include <getopt.h>
+#include <unistd.h>
 
-void remove_parents(char *full_path, int n, int flag_v)
+void remove_dirs(char *full_path, int n, int flag_v)
 {
     char *cur_path = full_path;
-    char *pch = strrchr(cur_path, '/');
     char filename[1000];
     strcpy(filename, cur_path + strlen(getenv("PWD")) + 1);
-    // add more errors
-    if (remove(cur_path))
-        printf("my_rmdir: cannot remove \'%s\': No such file or directory\n", filename);
-    else if (flag_v)
+
+    char *path = malloc(strlen(cur_path) + 1);
+    strcpy(path, cur_path);
+    char *pch = strrchr(path, '/');
+    path[pch - path] = 0;
+
+
+    pch = strrchr(cur_path, '/');
+    char *real_filename = malloc(strlen(pch));
+    strcpy(real_filename, pch + 1);
+
+    if (flag_v)
         printf("my_rmdir: removing directory, \'%s\'\n", filename);
+
+    if (access(cur_path, F_OK))
+    {
+        printf("my_rmdir: cannot remove \'%s\': No such file or directory\n", filename);
+        free(path);
+        free(real_filename);
+        return;
+    }
+
+    if (is_regular_file(cur_path)) {
+        printf("my_rmdir: cannot remove '%s': Not a directory\n", filename);
+        free(path);
+        free(real_filename);
+        return;
+    }
+
+    if (remove(cur_path)) {
+        printf("my_rmdir: failed to remove \'%s\': No such file or directory\n", filename);
+        free(path);
+        free(real_filename);
+        return;
+    }
+
     if (n > 0)
     {
         cur_path[pch - cur_path] = 0;
-        remove_parents(cur_path, n - 1, flag_v);
+        remove_dirs(cur_path, n - 1, flag_v);
     }
-    else
+    else {
+        free(path);
+        free(real_filename);
         return;
+    }
 }
 
 SHCMD(rmdir)
@@ -108,32 +142,23 @@ SHCMD(rmdir)
         strcpy(path, full_path);
         path[pch - full_path] = 0;
 
-        if (!file_exists(filename, path))
-        {
-            printf("my_rmdir: cannot remove \'%s\': No such file or directory\n", filename);
-            free(full_path);
-            free(path);
-            return 0;
-        }
-        if (is_regular_file(full_path)) {
-            printf("my_rmdir: cannot remove '%s': Not a directory\n", filename);
-            free(path);
-            return 0;
-        }
 
         int count = 0;
-        for (int j = 0; j < strlen(cur_param); j++)
-            if (cur_param[j] == '/')
-                count++;
-
-        if (flag_p)
-            remove_parents(full_path, count, flag_v);
+        char *temp_path = malloc(strlen(full_path) - strlen(getenv("PWD")) + 1);
+        if (situation == 1)
+            strcpy(temp_path, full_path + strlen(getenv("PWD")) + 1);
         else
-            if (remove(full_path))
-                printf("my_rmdir: failed to remove \'%s\': Directory not empty\n", filename);
+            strcpy(temp_path, cur_param);
+
+        if (flag_p) {
+            for (int j = 0; j < strlen(temp_path); j++)
+                if (temp_path[j] == '/')
+                    count++;
+        }
+        free(temp_path);
+        remove_dirs(full_path, count, flag_v);
         free(full_path);
         free(path);
     }
-
     return 0;
 }
