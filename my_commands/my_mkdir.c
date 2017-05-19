@@ -2,6 +2,8 @@
 // Created by murchanskii on 17.05.17.
 //
 
+// done: -p -v
+
 #include "my_functions.h"
 #include <stdio.h>
 #include <sys/stat.h>
@@ -9,102 +11,87 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-void create_parents(char *full_path, int flag_v)
+void create_dirs(char *full_path, char *path, int flag_p, int flag_v)
 {
-    char *cur_path = full_path;
-    char *path = malloc(strlen(cur_path) - strlen(getenv("PWD")) + 1);
-    strcpy(path, cur_path + strlen(getenv("PWD")) + 1);
-    printf("path: %s\n",path);
-    free(path);
-}
 
-void remove_certain_chars(char *str, char c)
-{
-    char *pr = str, *pw = str;
-    while(*pr)
-    {
-        *pw = *pr++;
-        pw += (*pw != c);
+    char *new_dir = malloc(strlen(full_path) * sizeof(char));
+    strcat(full_path, "/");
+    strcat(full_path, path);
+    strcpy(new_dir, full_path);
+    char *pch = strchr(path, '/');
+
+    int situation = 0;
+
+    if (flag_p && pch != NULL) {
+        situation = 1;
+        strcpy(path, pch + 1);
+        new_dir[strlen(new_dir) - strlen(path) - 1] = 0;
     }
-    *pw = 0;
+
+    pch = strrchr(new_dir, '/');
+
+    if (!access(new_dir, F_OK)) {
+        printf("my_mkdir: cannot create \'%s\': File exists\n", pch + 1);
+        free(new_dir);
+        return;
+    }
+
+    if (mkdir(new_dir, 0777)) {
+        printf("my_mkdir: cannot create '%s': No such file or directory\n", path);
+        free(new_dir);
+        return;
+    }
+
+    if (flag_v)
+        printf("my_mkdir: created directory '%s'\n", new_dir + strlen(getenv("PWD")) + 1);
+
+    if (situation)
+        create_dirs(new_dir, path, flag_p, flag_v);
+    else {
+        free(new_dir);
+        return;
+    }
+    free(new_dir);
 }
 
 SHCMD(mkdir)
 {
-    if (np < 2)
-    {
+    int n_start = calc_n_start();
+
+    if (np == n_start) {
         printf("my_mkdir: missing operand\n");
         return 0;
     }
-    int n_start = 1;
-    for (int i = 1; i < np; i++)
-        if (params[i][0] == '-')
-            n_start++;
-    for (int i = n_start; i < np; i++)
-    {
+
+    int flag_p = 0, flag_v = 0;
+    getopt_for_dirs(&flag_p, &flag_v);
+
+    for (int i = n_start; i < np; i++) {
         char cur_param[1000];
-        strcpy(cur_param, params[i]);
+        char *full_path = malloc(strlen(getenv("PWD")) + strlen(cur_param) + 2);
 
-        if (strstr(cur_param, "\""))
-            do {
-                i++;
-                strcat(cur_param, " ");
-                strcat(cur_param, params[i]);
-            } while(!strstr(params[i], "\""));
+        initialisation(full_path, cur_param, &i);
 
-        int situation = 0; // 1 - absolute path; 2 - relative path; 3 - filename
-        if (strstr(cur_param, "/")) {
-            if (cur_param[0] == '/')
-                situation = 1;
-            else
-                situation = 2;
-        }
+        /*int count = 0;
+        char *temp_path = malloc(strlen(full_path) - strlen(getenv("PWD")) + 1);
+        if (cur_param[0] == '/')
+            strcpy(temp_path, full_path + strlen(getenv("PWD")) + 1);
         else
-            situation = 3;
+            strcpy(temp_path, cur_param);
 
-        char *path;
-        char *full_path;
-
-        remove_certain_chars(cur_param, '\"');
-
-        switch(situation)
-        {
-            case 1: // absolute path
-                full_path = malloc(strlen(cur_param) + 1);
-                strcpy(full_path, cur_param);
-                break;
-            default: // case 2, 3
-                full_path = malloc(strlen(getenv("PWD")) + strlen(cur_param) + 2);
-                strcpy(full_path, getenv("PWD"));
-                strcat(full_path, "/");
-                strcat(full_path, cur_param);
-                break;
+        if (flag_p) {
+            for (int j = 0; j < strlen(temp_path); j++)
+                if (temp_path[j] == '/')
+                    count++;
         }
-        char *pch = strrchr(full_path, '/');
-        char *filename = malloc(strlen(pch));
-        strcpy(filename, pch + 1);
-        path = malloc(strlen(full_path) + 1);
-        strcpy(path, full_path);
-        path[pch - full_path] = 0;
+        free(temp_path);*/
 
-        create_parents(full_path, 1);
+        char *path = malloc(strlen(full_path) - strlen(getenv("PWD")) + 1);
+        strcpy(path, full_path + strlen(getenv("PWD")) + 1);
 
-        if (!access(full_path, F_OK))
-        {
-            printf("my_mkdir: cannot create directory '%s': File exists\n", cur_param);
-            free(full_path);
-            free(path);
-            return 0;
-        }
-
-
-        /*int ret = mkdir(full_path, 0700);
-        if (ret) {
-            printf("my_mkdir: cannot create directory '%s': No such file or directory\n", cur_param);
-        }*/
+        strcpy(full_path, getenv("PWD"));
+        create_dirs(full_path, path, flag_p, flag_v);
         free(full_path);
-        free(path);
     }
-
     return 0;
 }
