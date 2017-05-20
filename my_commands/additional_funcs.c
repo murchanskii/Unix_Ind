@@ -55,6 +55,17 @@ void remove_certain_chars(char *str, char c)
     *pw = 0;
 }
 
+int my_atoi(char *str)
+{
+    char *temp_str = malloc(strlen(str) + 1);
+    for (int i = 0, j = 0 ; i < strlen(str); i++)
+        if (str[i] <= '9' && str[i] >= '0')
+            temp_str[j++] = str[i];
+    int k = atoi(temp_str);
+    free(temp_str);
+    return k;
+}
+
 void getopt_for_dirs(int *flag_p, int *flag_v)
 {
     int opt = getopt(np, params, "pv");

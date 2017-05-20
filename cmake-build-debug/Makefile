@@ -231,6 +231,33 @@ my_commands/my_exit.c.s:
 	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_exit.c.s
 .PHONY : my_commands/my_exit.c.s
 
+my_commands/my_free.o: my_commands/my_free.c.o
+
+.PHONY : my_commands/my_free.o
+
+# target to build an object file
+my_commands/my_free.c.o:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_free.c.o
+.PHONY : my_commands/my_free.c.o
+
+my_commands/my_free.i: my_commands/my_free.c.i
+
+.PHONY : my_commands/my_free.i
+
+# target to preprocess a source file
+my_commands/my_free.c.i:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_free.c.i
+.PHONY : my_commands/my_free.c.i
+
+my_commands/my_free.s: my_commands/my_free.c.s
+
+.PHONY : my_commands/my_free.s
+
+# target to generate assembly for a file
+my_commands/my_free.c.s:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_free.c.s
+.PHONY : my_commands/my_free.c.s
+
 my_commands/my_ls.o: my_commands/my_ls.c.o
 
 .PHONY : my_commands/my_ls.o
@@ -441,6 +468,9 @@ help:
 	@echo "... my_commands/my_exit.o"
 	@echo "... my_commands/my_exit.i"
 	@echo "... my_commands/my_exit.s"
+	@echo "... my_commands/my_free.o"
+	@echo "... my_commands/my_free.i"
+	@echo "... my_commands/my_free.s"
 	@echo "... my_commands/my_ls.o"
 	@echo "... my_commands/my_ls.i"
 	@echo "... my_commands/my_ls.s"

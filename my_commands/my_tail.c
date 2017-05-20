@@ -75,7 +75,7 @@ SHCMD(tail)
                 printf("%s", line);
             line_count++;
         } while (c != NULL);
-
+        fclose(file);
         free(full_path);
     }
 

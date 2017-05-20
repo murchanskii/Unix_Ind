@@ -62,6 +62,9 @@ void my_exec(char *cmd)
         if ( IS_CMD(tail) )
             SHCMD_EXEC(tail);
     else
+        if ( IS_CMD(free) )
+            SHCMD_EXEC(free);
+    else
     { // иначе вызов внешней команды
         execvp(params[0], params);
         perror("exec"); // если возникла ошибка при запуске
