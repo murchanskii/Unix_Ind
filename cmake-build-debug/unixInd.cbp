@@ -96,6 +96,9 @@
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c">
 			<Option target="unixInd"/>
 		</Unit>
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_free.c">
+			<Option target="unixInd"/>
+		</Unit>
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h">
 			<Option target="unixInd"/>
 		</Unit>
@@ -115,6 +118,9 @@
 			<Option target="unixInd"/>
 		</Unit>
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c">
+			<Option target="unixInd"/>
+		</Unit>
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_tail.c">
 			<Option target="unixInd"/>
 		</Unit>
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/CMakeLists.txt">

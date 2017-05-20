@@ -18,6 +18,7 @@ void getopt_for_dirs(int *flag_p, int *flag_v);
 int is_regular_file(const char *path);
 int starts_with (char *str, char *start);
 void remove_certain_chars(char *str, char c);
+int my_atoi(char *str);
 int calc_n_start();
 
 SHCMD(pwd);
@@ -28,5 +29,7 @@ SHCMD(ps);
 SHCMD(rm);
 SHCMD(rmdir);
 SHCMD(mkdir);
+SHCMD(tail);
+SHCMD(free);
 
 #endif //UNIXIND_MY_FUNCTIONS_H

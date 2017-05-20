@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/unixInd.dir/my_commands/my_mkdir.c.o"
   "CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o"
   "CMakeFiles/unixInd.dir/my_commands/additional_funcs.c.o"
+  "CMakeFiles/unixInd.dir/my_commands/my_tail.c.o"
+  "CMakeFiles/unixInd.dir/my_commands/my_free.c.o"
   "unixInd.pdb"
   "unixInd"
 )

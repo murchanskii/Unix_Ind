@@ -13,6 +13,9 @@ CMakeFiles/unixInd.dir/my_commands/my_cd.c.o
 CMakeFiles/unixInd.dir/my_commands/my_exit.c.o
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_exit.c
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+CMakeFiles/unixInd.dir/my_commands/my_free.c.o
+ /home/murchanskii/Documents/my_unix_ind/my_commands/my_free.c
+ /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c
@@ -31,3 +34,6 @@ CMakeFiles/unixInd.dir/my_commands/my_rm.c.o
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c
+CMakeFiles/unixInd.dir/my_commands/my_tail.c.o
+ /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+ /home/murchanskii/Documents/my_unix_ind/my_commands/my_tail.c

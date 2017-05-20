@@ -12,11 +12,11 @@
 // cd
 // rm
 // rmdir
+// mkdir
+// tail
 
 // NOT DONE
-// mkdir
 // free
-// tail
 // ps
 
 
@@ -58,6 +58,12 @@ void my_exec(char *cmd)
     else
         if ( IS_CMD(mkdir) )
             SHCMD_EXEC(mkdir);
+    else
+        if ( IS_CMD(tail) )
+            SHCMD_EXEC(tail);
+    else
+        if ( IS_CMD(free) )
+            SHCMD_EXEC(free);
     else
     { // иначе вызов внешней команды
         execvp(params[0], params);
