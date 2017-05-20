@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_pwd.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_rm.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_rm.c.o"
   "/home/murchanskii/Documents/my_unix_ind/my_commands/my_rmdir.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o"
+  "/home/murchanskii/Documents/my_unix_ind/my_commands/my_tail.c" "/home/murchanskii/Documents/my_unix_ind/cmake-build-debug/CMakeFiles/unixInd.dir/my_commands/my_tail.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

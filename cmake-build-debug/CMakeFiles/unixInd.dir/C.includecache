@@ -144,3 +144,17 @@ stdlib.h
 unistd.h
 -
 
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_tail.c
+my_functions.h
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+stdio.h
+-
+getopt.h
+-
+stdlib.h
+-
+memory.h
+-
+unistd.h
+-
+

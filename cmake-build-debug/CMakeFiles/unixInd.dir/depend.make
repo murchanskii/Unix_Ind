@@ -31,3 +31,6 @@ CMakeFiles/unixInd.dir/my_commands/my_rm.c.o: ../my_commands/my_rm.c
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o: ../my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o: ../my_commands/my_rmdir.c
 
+CMakeFiles/unixInd.dir/my_commands/my_tail.c.o: ../my_commands/my_functions.h
+CMakeFiles/unixInd.dir/my_commands/my_tail.c.o: ../my_commands/my_tail.c
+

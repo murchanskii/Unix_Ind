@@ -28,5 +28,6 @@ SHCMD(ps);
 SHCMD(rm);
 SHCMD(rmdir);
 SHCMD(mkdir);
+SHCMD(tail);
 
 #endif //UNIXIND_MY_FUNCTIONS_H

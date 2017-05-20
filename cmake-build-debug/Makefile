@@ -393,6 +393,33 @@ my_commands/my_rmdir.c.s:
 	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.s
 .PHONY : my_commands/my_rmdir.c.s
 
+my_commands/my_tail.o: my_commands/my_tail.c.o
+
+.PHONY : my_commands/my_tail.o
+
+# target to build an object file
+my_commands/my_tail.c.o:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_tail.c.o
+.PHONY : my_commands/my_tail.c.o
+
+my_commands/my_tail.i: my_commands/my_tail.c.i
+
+.PHONY : my_commands/my_tail.i
+
+# target to preprocess a source file
+my_commands/my_tail.c.i:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_tail.c.i
+.PHONY : my_commands/my_tail.c.i
+
+my_commands/my_tail.s: my_commands/my_tail.c.s
+
+.PHONY : my_commands/my_tail.s
+
+# target to generate assembly for a file
+my_commands/my_tail.c.s:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_tail.c.s
+.PHONY : my_commands/my_tail.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -432,6 +459,9 @@ help:
 	@echo "... my_commands/my_rmdir.o"
 	@echo "... my_commands/my_rmdir.i"
 	@echo "... my_commands/my_rmdir.s"
+	@echo "... my_commands/my_tail.o"
+	@echo "... my_commands/my_tail.i"
+	@echo "... my_commands/my_tail.s"
 .PHONY : help
 
 
