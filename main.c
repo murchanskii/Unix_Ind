@@ -14,10 +14,10 @@
 // rmdir
 // mkdir
 // tail
-
-// NOT DONE
 // free
 // ps
+
+// NOT DONE
 
 
 // выполнение команды с параметрами
@@ -69,12 +69,6 @@ void my_exec(char *cmd)
         execvp(params[0], params);
         perror("exec"); // если возникла ошибка при запуске
     }
-}
-
-int starts_with (char *str, char *start)
-{
-    char *result = strstr(str, start);
-    return ( result - str == 0) ? 1 : 0;
 }
 
 // рекурсивная функция обработки конвейера

@@ -100,3 +100,9 @@ int is_regular_file(const char *path)
     stat(path, &path_stat);
     return S_ISREG(path_stat.st_mode);
 }
+
+int starts_with (char *str, char *start)
+{
+    char *result = strstr(str, start);
+    return ( result - str == 0) ? 1 : 0;
+}
