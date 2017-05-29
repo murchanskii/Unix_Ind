@@ -32,4 +32,6 @@ SHCMD(mkdir);
 SHCMD(tail);
 SHCMD(free);
 
+void replace_env_var(char *cmdline);
+
 #endif //UNIXIND_MY_FUNCTIONS_H

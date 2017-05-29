@@ -17,8 +17,6 @@ unistd.h
 -
 sys/wait.h
 -
-values.h
--
 my_commands/my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 
@@ -103,8 +101,6 @@ unistd.h
 -
 memory.h
 -
-stdlib.h
--
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c
 stdio.h
@@ -157,4 +153,16 @@ memory.h
 -
 unistd.h
 -
+
+/home/murchanskii/Documents/my_unix_ind/my_commands/replace_env.c
+stdio.h
+-
+memory.h
+-
+stdlib.h
+-
+ctype.h
+-
+my_functions.h
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 

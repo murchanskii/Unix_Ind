@@ -3,6 +3,7 @@
 //
 
 // вывод списка процессов
+// -e -a -f - сделать
 
 #include "my_functions.h"
 #include <stdio.h>

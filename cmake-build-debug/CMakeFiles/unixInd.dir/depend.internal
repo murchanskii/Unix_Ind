@@ -37,3 +37,6 @@ CMakeFiles/unixInd.dir/my_commands/my_rmdir.c.o
 CMakeFiles/unixInd.dir/my_commands/my_tail.c.o
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
  /home/murchanskii/Documents/my_unix_ind/my_commands/my_tail.c
+CMakeFiles/unixInd.dir/my_commands/replace_env.c.o
+ /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+ /home/murchanskii/Documents/my_unix_ind/my_commands/replace_env.c

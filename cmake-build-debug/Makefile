@@ -447,6 +447,33 @@ my_commands/my_tail.c.s:
 	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_tail.c.s
 .PHONY : my_commands/my_tail.c.s
 
+my_commands/replace_env.o: my_commands/replace_env.c.o
+
+.PHONY : my_commands/replace_env.o
+
+# target to build an object file
+my_commands/replace_env.c.o:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/replace_env.c.o
+.PHONY : my_commands/replace_env.c.o
+
+my_commands/replace_env.i: my_commands/replace_env.c.i
+
+.PHONY : my_commands/replace_env.i
+
+# target to preprocess a source file
+my_commands/replace_env.c.i:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/replace_env.c.i
+.PHONY : my_commands/replace_env.c.i
+
+my_commands/replace_env.s: my_commands/replace_env.c.s
+
+.PHONY : my_commands/replace_env.s
+
+# target to generate assembly for a file
+my_commands/replace_env.c.s:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/replace_env.c.s
+.PHONY : my_commands/replace_env.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -492,6 +519,9 @@ help:
 	@echo "... my_commands/my_tail.o"
 	@echo "... my_commands/my_tail.i"
 	@echo "... my_commands/my_tail.s"
+	@echo "... my_commands/replace_env.o"
+	@echo "... my_commands/replace_env.i"
+	@echo "... my_commands/replace_env.s"
 .PHONY : help
 
 

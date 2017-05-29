@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include <values.h>
 
 #include "my_commands/my_functions.h"
 
@@ -15,9 +14,9 @@
 // mkdir
 // tail
 // free
-// ps
 
 // NOT DONE
+// ps
 
 
 // выполнение команды с параметрами
@@ -153,6 +152,8 @@ int main()
 
         fgets(cmdline,1024,stdin);
         if( (p = strstr(cmdline,"\n")) != NULL ) p[0] = 0;
+
+        replace_env_var(cmdline);
 
         token = strtok(cmdline, "|");
         for(cmd_cnt = 0; token && cmd_cnt < 256; cmd_cnt++ )
