@@ -21,6 +21,9 @@ void remove_certain_chars(char *str, char c);
 int my_atoi(char *str);
 int calc_n_start();
 
+void my_exec(char *cmd);
+int exec_conv(char *cmds[], int n, int curr);
+
 SHCMD(pwd);
 SHCMD(exit);
 SHCMD(ls);
@@ -33,5 +36,6 @@ SHCMD(tail);
 SHCMD(free);
 
 void replace_env_var(char *cmdline);
+void if_expression(char *cmdline);
 
 #endif //UNIXIND_MY_FUNCTIONS_H

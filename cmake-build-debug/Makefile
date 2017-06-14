@@ -258,6 +258,33 @@ my_commands/my_free.c.s:
 	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_free.c.s
 .PHONY : my_commands/my_free.c.s
 
+my_commands/my_if.o: my_commands/my_if.c.o
+
+.PHONY : my_commands/my_if.o
+
+# target to build an object file
+my_commands/my_if.c.o:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_if.c.o
+.PHONY : my_commands/my_if.c.o
+
+my_commands/my_if.i: my_commands/my_if.c.i
+
+.PHONY : my_commands/my_if.i
+
+# target to preprocess a source file
+my_commands/my_if.c.i:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_if.c.i
+.PHONY : my_commands/my_if.c.i
+
+my_commands/my_if.s: my_commands/my_if.c.s
+
+.PHONY : my_commands/my_if.s
+
+# target to generate assembly for a file
+my_commands/my_if.c.s:
+	$(MAKE) -f CMakeFiles/unixInd.dir/build.make CMakeFiles/unixInd.dir/my_commands/my_if.c.s
+.PHONY : my_commands/my_if.c.s
+
 my_commands/my_ls.o: my_commands/my_ls.c.o
 
 .PHONY : my_commands/my_ls.o
@@ -498,6 +525,9 @@ help:
 	@echo "... my_commands/my_free.o"
 	@echo "... my_commands/my_free.i"
 	@echo "... my_commands/my_free.s"
+	@echo "... my_commands/my_if.o"
+	@echo "... my_commands/my_if.i"
+	@echo "... my_commands/my_if.s"
 	@echo "... my_commands/my_ls.o"
 	@echo "... my_commands/my_ls.i"
 	@echo "... my_commands/my_ls.s"

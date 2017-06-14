@@ -9,9 +9,11 @@
 #include <memory.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <errno.h>
 
 void remove_dirs(char *full_path, int n, int flag_v)
 {
+    char error_msg[256];
     char *cur_path = full_path;
     char filename[1000];
     strcpy(filename, cur_path + strlen(getenv("PWD")) + 1);
@@ -21,18 +23,20 @@ void remove_dirs(char *full_path, int n, int flag_v)
     if (flag_v)
         printf("my_rmdir: removing directory, \'%s\'\n", filename);
 
-    if (access(cur_path, F_OK)) {
-        printf("my_rmdir: cannot remove \'%s\': No such file or directory\n", filename);
-        return;
-    }
-
     if (is_regular_file(cur_path)) {
-        printf("my_rmdir: cannot remove '%s': Not a directory\n", filename);
+        errno = ENOTDIR;
+        strcpy(error_msg, "my_rmdir: cannot remove '");
+        strcat(error_msg, filename);
+        strcat(error_msg, "'");
+        perror(error_msg);
         return;
     }
 
     if (remove(cur_path)) {
-        printf("my_rmdir: failed to remove \'%s\': Directory not empty\n", filename);
+        strcpy(error_msg, "my_rmdir: cannot remove '");
+        strcat(error_msg, filename);
+        strcat(error_msg, "'");
+        perror(error_msg);
         return;
     }
 

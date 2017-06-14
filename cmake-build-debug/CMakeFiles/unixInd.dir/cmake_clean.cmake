@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/unixInd.dir/my_commands/my_tail.c.o"
   "CMakeFiles/unixInd.dir/my_commands/my_free.c.o"
   "CMakeFiles/unixInd.dir/my_commands/replace_env.c.o"
+  "CMakeFiles/unixInd.dir/my_commands/my_if.c.o"
   "unixInd.pdb"
   "unixInd"
 )

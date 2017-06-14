@@ -29,15 +29,13 @@ void create_dirs(char *full_path, char *path, int flag_p, int flag_v)
     }
 
     pch = strrchr(new_dir, '/');
-
-    if (!access(new_dir, F_OK)) {
-        printf("my_mkdir: cannot create \'%s\': File exists\n", pch + 1);
-        free(new_dir);
-        return;
-    }
+    char error_msg[256];
 
     if (mkdir(new_dir, 0777)) {
-        printf("my_mkdir: cannot create '%s': No such file or directory\n", path);
+        strcpy(error_msg, "my_mkdir: cannot create \'");
+        strcat(error_msg, pch + 1);
+        strcat(error_msg, "\'");
+        perror(error_msg);
         free(new_dir);
         return;
     }
@@ -71,20 +69,6 @@ SHCMD(mkdir)
         char *full_path = malloc(strlen(getenv("PWD")) + strlen(cur_param) + 2);
 
         initialisation(full_path, cur_param, &i);
-
-        /*int count = 0;
-        char *temp_path = malloc(strlen(full_path) - strlen(getenv("PWD")) + 1);
-        if (cur_param[0] == '/')
-            strcpy(temp_path, full_path + strlen(getenv("PWD")) + 1);
-        else
-            strcpy(temp_path, cur_param);
-
-        if (flag_p) {
-            for (int j = 0; j < strlen(temp_path); j++)
-                if (temp_path[j] == '/')
-                    count++;
-        }
-        free(temp_path);*/
 
         char *path = malloc(strlen(full_path) - strlen(getenv("PWD")) + 1);
         strcpy(path, full_path + strlen(getenv("PWD")) + 1);

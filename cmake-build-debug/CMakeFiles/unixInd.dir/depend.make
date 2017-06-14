@@ -16,6 +16,9 @@ CMakeFiles/unixInd.dir/my_commands/my_exit.c.o: ../my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_free.c.o: ../my_commands/my_free.c
 CMakeFiles/unixInd.dir/my_commands/my_free.c.o: ../my_commands/my_functions.h
 
+CMakeFiles/unixInd.dir/my_commands/my_if.c.o: ../my_commands/my_functions.h
+CMakeFiles/unixInd.dir/my_commands/my_if.c.o: ../my_commands/my_if.c
+
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o: ../my_commands/my_functions.h
 CMakeFiles/unixInd.dir/my_commands/my_ls.c.o: ../my_commands/my_ls.c
 

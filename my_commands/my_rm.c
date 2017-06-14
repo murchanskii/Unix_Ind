@@ -9,6 +9,7 @@
 #include <getopt.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <errno.h>
 #include "my_functions.h"
 
 SHCMD(rm)
@@ -47,11 +48,17 @@ SHCMD(rm)
         char *full_path = malloc(strlen(getenv("PWD")) + strlen(cur_param) + 2);
 
         initialisation(full_path, cur_param, &i);
+        char error_msg[256];
 
         if (access(full_path, F_OK)) {
             free(full_path);
-            if (!flag_f)
-                printf("my_rm: cannot remove \'%s\': No such file or directory\n", cur_param);
+            if (!flag_f) {
+                errno = ENOENT;
+                strcpy(error_msg, "my_rm: cannot remove \'");
+                strcat(error_msg, cur_param);
+                strcat(error_msg, "\'");
+                perror(error_msg);
+            }
             next_move = 1;
         }
 
@@ -64,7 +71,13 @@ SHCMD(rm)
             else if (!flag_d) {
                 free(full_path);
                 if (!flag_f)
-                    printf("my_rm: cannot remove '%s': Is a directory\n", cur_param);
+                {
+                    errno = EISDIR;
+                    strcpy(error_msg, "my_rm: cannot remove \'");
+                    strcat(error_msg, cur_param);
+                    strcat(error_msg, "\'");
+                    perror(error_msg);
+                }
                 next_move = 1;
             }
 
@@ -92,8 +105,12 @@ SHCMD(rm)
 
                 if (!next_move) {
                     if (remove(full_path))
-                        if (!flag_f)
-                            printf("my_rm: cannot remove \'%s\': Directory not empty\n", cur_param);
+                        if (!flag_f) {
+                            strcpy(error_msg, "my_rm: cannot remove \'");
+                            strcat(error_msg, cur_param);
+                            strcat(error_msg, "\'");
+                            perror(error_msg);
+                        }
                     free(full_path);
                 }
             }

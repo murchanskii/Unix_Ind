@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <memory.h>
 #include <unistd.h>
+#include <errno.h>
 
 SHCMD(tail)
 {
@@ -21,11 +22,10 @@ SHCMD(tail)
     }
 
     int opt = getopt(np, params, "n:");
-    int flag_n = 0, num_lines = 10;
+    int num_lines = 10;
     while( opt != -1 ) {
         switch (opt) {
             case 'n':
-                flag_n = 1;
                 num_lines = atoi(optarg);
                 n_start++;
                 break;
@@ -36,6 +36,7 @@ SHCMD(tail)
         opt = getopt(np, params, "n");
     }
     optind = 1;
+    char error_msg[256];
 
     for (int i = n_start; i < np; i++) {
         char cur_param[1000];
@@ -43,12 +44,28 @@ SHCMD(tail)
 
         initialisation(full_path, cur_param, &i);
 
-        if (access(full_path, F_OK))
-            printf("my_tail: cannot read '%s': No such file or directory\n", cur_param);
+        if (access(full_path, F_OK)) {
+            errno = ENOENT;
+            strcpy(error_msg, "my_tail: cannot read '");
+            strcat(error_msg, cur_param);
+            strcat(error_msg, "'");
+            perror(error_msg);
+            return 0;
+            //printf("my_tail: cannot read '%s': No such file or directory\n", cur_param);
+        }
 
 
         if (!is_regular_file(full_path))
-            printf("my_tail: cannot read '%s': Is a directory\n", cur_param);
+        {
+            errno = EISDIR;
+            strcpy(error_msg, "my_tail: cannot read '");
+            strcat(error_msg, cur_param);
+            strcat(error_msg, "'");
+            perror(error_msg);
+            return 0;
+            //printf("my_tail: cannot read '%s': Is a directory\n", cur_param);
+        }
+
 
         int ch = 0, all_lines = 0;
         FILE *file = fopen(full_path, "r");
@@ -71,7 +88,7 @@ SHCMD(tail)
 
         do {
             c = fgets(line, length, file);
-            if (c != NULL && (line_count > all_lines - num_lines))
+            if (c != NULL && (line_count >= all_lines - num_lines))
                 printf("%s", line);
             line_count++;
         } while (c != NULL);

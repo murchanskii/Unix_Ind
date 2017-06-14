@@ -31,6 +31,12 @@ getopt.h
 -
 sys/stat.h
 -
+stdio.h
+-
+unistd.h
+-
+sys/wait.h
+-
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_cd.c
 stdio.h
@@ -40,6 +46,8 @@ unistd.h
 stdlib.h
 -
 memory.h
+-
+errno.h
 -
 my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
@@ -57,6 +65,20 @@ stdio.h
 -
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_if.c
+my_functions.h
+/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
+stdio.h
+-
+memory.h
+-
+stdlib.h
+-
+unistd.h
+-
+sys/wait.h
+-
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c
 stdio.h
@@ -101,6 +123,18 @@ unistd.h
 -
 memory.h
 -
+stdlib.h
+-
+dirent.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+pwd.h
+-
+time.h
+-
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_pwd.c
 stdio.h
@@ -125,6 +159,8 @@ stdlib.h
 -
 unistd.h
 -
+errno.h
+-
 my_functions.h
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h
 
@@ -139,6 +175,8 @@ stdlib.h
 -
 unistd.h
 -
+errno.h
+-
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/my_tail.c
 my_functions.h
@@ -152,6 +190,8 @@ stdlib.h
 memory.h
 -
 unistd.h
+-
+errno.h
 -
 
 /home/murchanskii/Documents/my_unix_ind/my_commands/replace_env.c

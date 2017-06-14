@@ -102,6 +102,9 @@
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_functions.h">
 			<Option target="unixInd"/>
 		</Unit>
+		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_if.c">
+			<Option target="unixInd"/>
+		</Unit>
 		<Unit filename="/home/murchanskii/Documents/my_unix_ind/my_commands/my_ls.c">
 			<Option target="unixInd"/>
 		</Unit>

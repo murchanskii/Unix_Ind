@@ -8,12 +8,14 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <memory.h>
+#include <errno.h>
 #include "my_functions.h"
 
 int check_for_existing(char *path)
 {
     if (chdir(path)) {
-        printf("my_cd: %s: No such file or directory\n", path);
+        errno = ENOENT;
+        perror("my_cd");
         return 0;
     }
     else
@@ -24,40 +26,47 @@ SHCMD(cd)
 {
     if (np == 1 || strcmp(params[1], "~") == 0) {
         setenv("PWD", getenv("HOME"), 1);
+        return 0;
+    }
+    if (starts_with(params[1], "/")) {
+        if (check_for_existing(params[1]))
+            setenv("PWD", params[1], 1);
+        else {
+            errno = ENOENT;
+            perror("unixInd: cd");
+            return 0;
+        }
     }
     else
     {
-        if (starts_with(params[1], "/")) {
-            if (check_for_existing(params[1]))
-                setenv("PWD", params[1], 1);
-            else
-                return 0;
-        }
-        else
-        {
-            char new_dir[255];
-            strcpy(new_dir, getenv("PWD"));
-            if (starts_with(params[1],"..")) {
-                char p[255];
-                strcpy(p, params[1]);
-                while (starts_with(p, ".."))
-                {
-                    char *pch = strrchr(new_dir, '/');
-                    new_dir[pch - new_dir] = 0;
-                    strcpy(p, p + 3);
-                }
-                if (check_for_existing(new_dir))
-                    setenv("PWD", new_dir, 1);
-                else
-                    return 0;
+        char new_dir[255];
+        strcpy(new_dir, getenv("PWD"));
+        if (starts_with(params[1],"..")) {
+            char p[255];
+            strcpy(p, params[1]);
+            while (starts_with(p, ".."))
+            {
+                char *pch = strrchr(new_dir, '/');
+                new_dir[pch - new_dir] = 0;
+                strcpy(p, p + 3);
             }
+            if (check_for_existing(new_dir))
+                setenv("PWD", new_dir, 1);
             else {
-                strcat(new_dir, "/");
-                strcat(new_dir, params[1]);
-                if (check_for_existing(new_dir))
-                    setenv("PWD", new_dir, 1);
-                else
-                    return 0;
+                errno = ENOENT;
+                perror("unixInd: cd");
+                return 0;
+            }
+        }
+        else {
+            strcat(new_dir, "/");
+            strcat(new_dir, params[1]);
+            if (check_for_existing(new_dir))
+                setenv("PWD", new_dir, 1);
+            else {
+                errno = ENOENT;
+                perror("unixInd: cd");
+                return 0;
             }
         }
     }

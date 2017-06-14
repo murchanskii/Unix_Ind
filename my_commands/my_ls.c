@@ -61,7 +61,7 @@ SHCMD(ls)
         if (flag_l)
         {
             int mode = st.st_mode;
-            static char * rights = "rwxrwxrwx";
+            static char *rights = "rwxrwxrwx";
             if (S_ISDIR(mode))
                 printf("d");
             else
